@@ -1,0 +1,15 @@
+1. clone project dari github
+2. buat branch baru dengan nama sendiri dan push branch tersebut
+3. import db "POS" yang ada di root projek ke dbms (mysql)
+4. buatlah transaksi pembelian barang dengan ketentuan sbb:
+	a. item berang diambil dari table "barang"
+	b. satu transaksi bisa lebih dari satu item barang berebeda
+	c. setiap item barang bisa lebih dari 1 quantity dan dikalikan dengan harga item barang tsb
+	d. setiap item yang telah dibeli akan mengurangi stok tersedia di table "barang"
+	e. salah satu item barang wajib membeli item beras sebanyak 2.5(dua setangah) kilogram
+	f. setelah selesai melakukan transaksi akan mengurangi deposit sebesar total transaksi tersebut dan akan mengembalikan nested array/json yang berisi data transaksi, detail transaksi dan total sisa deposit
+	g. transaksi menggunakan jquery/ajax
+	h. custom format sequence nomortransaksi MMYY-00001, contoh 0821-00001. Ketika masuk bulan berikutnya, sequence akan kembali ke 1 lagi
+5. buatlah list daftar transaksi yang mengembalikan nilai berupa nested array/json  
+6. push hasil kerjaan anda ke branch yang anda buat.
+
